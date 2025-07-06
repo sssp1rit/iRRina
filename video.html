@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой To-Do лист - Видео</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#fff0f6',
+                        'pink-primary': '#ff85a2',
+                        'pink-dark': '#e75480',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-soft-pink min-h-screen">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-pink-primary fade-in">Мой To-Do лист</h1>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-pink-primary hover:text-pink-dark transition">Главная</a>
+                    <a href="features.html" class="text-pink-primary hover:text-pink-dark transition">Возможности</a>
+                    <a href="video.html" class="text-pink-primary hover:text-pink-dark transition">Видео</a>
+                    <a href="table.html" class="text-pink-primary hover:text-pink-dark transition">Таблица</a>
+                    <a href="contacts.html" class="text-pink-primary hover:text-pink-dark transition">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 fade-in">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Видео: Как эффективно планировать задачи</h2>
+                
+                <div class="video-container mb-4 rounded-lg overflow-hidden">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RO0-SAkYe0w?si=vurev7GQOlSCV0fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Дополнительные материалы</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-pink-primary hover:text-pink-dark transition">10 советов по тайм-менеджменту</a></li>
+                            <li><a href="#" class="text-pink-primary hover:text-pink-dark transition">Как расставить приоритеты в задачах</a></li>
+                            <li><a href="#" class="text-pink-primary hover:text-pink-dark transition">Методы повышения продуктивности</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">О чем это видео?</h3>
+                        <p class="text-gray-600">В этом видео вы узнаете основные принципы эффективного планирования задач, научитесь расставлять приоритеты и управлять своим временем. Эксперт по продуктивности поделится проверенными методиками, которые помогут вам достигать большего за меньшее время.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Мой To-Do лист</h2>
+                    <p class="text-gray-400">© 2023 Все права защищены</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Условия использования</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

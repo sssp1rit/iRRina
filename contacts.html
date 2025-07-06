@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой To-Do лист - Контакты</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#fff0f6',
+                        'pink-primary': '#ff85a2',
+                        'pink-dark': '#e75480',
+                        'pink-light': '#ffd6e7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-soft-pink min-h-screen">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-pink-primary fade-in">Мой To-Do лист</h1>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-pink-primary hover:text-pink-dark transition">Главная</a>
+                    <a href="features.html" class="text-pink-primary hover:text-pink-dark transition">Возможности</a>
+                    <a href="video.html" class="text-pink-primary hover:text-pink-dark transition">Видео</a>
+                    <a href="table.html" class="text-pink-primary hover:text-pink-dark transition">Таблица</a>
+                    <a href="contacts.html" class="text-pink-primary hover:text-pink-dark transition">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 fade-in">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Свяжитесь с нами</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Ваше имя</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Сообщение</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-primary"></textarea>
+                            </div>
+                            <button type="submit" class="bg-pink-primary text-white px-6 py-2 rounded-lg hover:bg-pink-dark transition">Отправить</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Наши контакты</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-pink-primary text-xl mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4 class="font-medium">Адрес</h4>
+                                    <p class="text-gray-600">г. Москва, ул. Примерная, д. 123</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-pink-primary text-xl mr-3 mt-1"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4 class="font-medium">Телефон</h4>
+                                    <p class="text-gray-600">+7 (123) 456-78-90</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-pink-primary text-xl mr-3 mt-1"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-gray-600">info@todolist.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-xl font-medium text-gray-800 mb-4">Мы в социальных сетях</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-pink-primary hover:text-pink-dark text-2xl transition"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="text-pink-primary hover:text-pink-dark text-2xl transition"><i class="fab fa-telegram"></i></a>
+                                <a href="#" class="text-pink-primary hover:text-pink-dark text-2xl transition"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-pink-primary hover:text-pink-dark text-2xl transition"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="text-xl font-medium text-gray-800 mb-4">Как нас найти</h3>
+                    <div class="bg-pink-light p-4 rounded-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373786135602!2d37.61842331593076!3d55.75393098055348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1623752345678!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Мой To-Do лист</h2>
+                    <p class="text-gray-400">© 2023 Все права защищены</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Условия использования</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

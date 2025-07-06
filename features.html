@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой To-Do лист - Возможности</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#fff0f6',
+                        'pink-primary': '#ff85a2',
+                        'pink-light': '#ffd6e7',
+                        'pink-dark': '#e75480',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-soft-pink min-h-screen">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-pink-primary fade-in">Мой To-Do лист</h1>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-pink-primary hover:text-pink-dark transition">Главная</a>
+                    <a href="features.html" class="text-pink-primary hover:text-pink-dark transition">Возможности</a>
+                    <a href="video.html" class="text-pink-primary hover:text-pink-dark transition">Видео</a>
+                    <a href="table.html" class="text-pink-primary hover:text-pink-dark transition">Таблица</a>
+                    <a href="contacts.html" class="text-pink-primary hover:text-pink-dark transition">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="features" class="mb-12 fade-in">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Возможности нашего планировщика</h2>
+                <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                    Наш планировщик задач предлагает полный набор инструментов для эффективного управления вашим временем и задачами. 
+                    От простого списка дел до продвинутой аналитики - все, что нужно для продуктивной работы.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-gradient-to-b from-pink-light to-white p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-pink-100">
+                        <div class="text-pink-primary text-4xl mb-4"><i class="fas fa-tasks"></i></div>
+                        <h3 class="font-bold text-xl mb-3">Полное управление задачами</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Добавление, редактирование и удаление задач</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Отметка выполненных задач</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Автоматическое сохранение в браузере</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Удобный интерфейс с анимациями</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-b from-pink-light to-white p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-pink-100">
+                        <div class="text-pink-primary text-4xl mb-4"><i class="fas fa-sliders-h"></i></div>
+                        <h3 class="font-bold text-xl mb-3">Гибкие настройки</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Фильтрация задач: все/активные/выполненные</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Сортировка по дате добавления</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Гибкие категории задач</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Настройка приоритетов</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-b from-pink-light to-white p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-pink-100">
+                        <div class="text-pink-primary text-4xl mb-4"><i class="fas fa-chart-pie"></i></div>
+                        <h3 class="font-bold text-xl mb-3">Аналитика и статистика</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Отслеживание общего числа задач</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Статистика выполненных задач</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>Визуализация прогресса</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-pink-primary mt-1 mr-2"></i>
+                                <span>История активности</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-pink-light rounded-xl p-8 mb-12">
+                    <h3 class="text-2xl font-bold text-center text-pink-dark mb-6">Дополнительные преимущества</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex items-start">
+                            <div class="bg-pink-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-mobile-alt text-pink-dark text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Адаптивный дизайн</h4>
+                                <p class="text-gray-600">Полнофункциональный планировщик на любом устройстве - компьютере, планшете или смартфоне.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-bolt text-pink-dark text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Мгновенная работа</h4>
+                                <p class="text-gray-600">Быстрая загрузка и моментальный отклик интерфейса без задержек.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-lock text-pink-dark text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Конфиденциальность</h4>
+                                <p class="text-gray-600">Все данные хранятся только в вашем браузере и никуда не передаются.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-palette text-pink-dark text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Приятный интерфейс</h4>
+                                <p class="text-gray-600">Чистый, интуитивный дизайн с анимациями для комфортной работы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Готовы начать?</h3>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Начните использовать наш планировщик прямо сейчас и почувствуйте, насколько проще станет управлять вашими задачами!</p>
+                    <a href="index.html" class="inline-block bg-pink-primary text-white px-8 py-3 rounded-lg hover:bg-pink-dark transition font-medium text-lg">
+                        Попробовать сейчас <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Мой To-Do лист</h2>
+                    <p class="text-gray-400">© 2023 Все права защищены</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Условия использования</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

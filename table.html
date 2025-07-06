@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой To-Do лист - Таблица задач</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#fff0f6',
+                        'pink-primary': '#ff85a2',
+                        'pink-dark': '#e75480',
+                        'pink-light': '#ffd6e7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-soft-pink min-h-screen">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-pink-primary fade-in">Мой To-Do лист</h1>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-pink-primary hover:text-pink-dark transition">Главная</a>
+                    <a href="features.html" class="text-pink-primary hover:text-pink-dark transition">Возможности</a>
+                    <a href="video.html" class="text-pink-primary hover:text-pink-dark transition">Видео</a>
+                    <a href="table.html" class="text-pink-primary hover:text-pink-dark transition">Таблица</a>
+                    <a href="contacts.html" class="text-pink-primary hover:text-pink-dark transition">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 fade-in">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Примеры задач по категориям</h2>
+                
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden mb-8">
+                    <thead class="bg-pink-primary text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Категория</th>
+                            <th class="py-3 px-4 text-left">Пример задачи</th>
+                            <th class="py-3 px-4 text-left">Приоритет</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-pink-light transition">
+                            <td class="py-3 px-4">Работа</td>
+                            <td class="py-3 px-4">Подготовить отчет для руководства</td>
+                            <td class="py-3 px-4"><span class="bg-red-100 text-red-800 px-2 py-1 rounded">Высокий</span></td>
+                        </tr>
+                        <tr class="hover:bg-pink-light transition">
+                            <td class="py-3 px-4">Дом</td>
+                            <td class="py-3 px-4">Купить продукты</td>
+                            <td class="py-3 px-4"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Средний</span></td>
+                        </tr>
+                        <tr class="hover:bg-pink-light transition">
+                            <td class="py-3 px-4">Учеба</td>
+                            <td class="py-3 px-4">Прочитать главу по JavaScript</td>
+                            <td class="py-3 px-4"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">Низкий</span></td>
+                        </tr>
+                        <tr class="hover:bg-pink-light transition">
+                            <td class="py-3 px-4">Здоровье</td>
+                            <td class="py-3 px-4">Пойти на пробежку</td>
+                            <td class="py-3 px-4"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Средний</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Как работать с таблицей задач?</h3>
+                        <p class="text-gray-600 mb-4">Таблица задач помогает вам классифицировать ваши дела по категориям и приоритетам. Это позволяет лучше организовать ваш день и сосредоточиться на самом важном.</p>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Разделяйте задачи по категориям (работа, дом, учеба и т.д.)</li>
+                            <li>Присваивайте каждой задаче приоритет (высокий, средний, низкий)</li>
+                            <li>Начинайте с задач высокого приоритета</li>
+                            <li>Регулярно обновляйте список задач</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Определение приоритетов</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="bg-red-100 text-red-800 px-2 py-1 rounded mr-2">Высокий</span>
+                                <span class="text-gray-600">Важные и срочные задачи, которые нужно выполнить в первую очередь</span>
+                            </div>
+                            <div>
+                                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded mr-2">Средний</span>
+                                <span class="text-gray-600">Важные, но не срочные задачи, которые можно запланировать на ближайшее время</span>
+                            </div>
+                            <div>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-2">Низкий</span>
+                                <span class="text-gray-600">Несрочные задачи, которые можно выполнить, когда будет свободное время</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Мой To-Do лист</h2>
+                    <p class="text-gray-400">© 2023 Все права защищены</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Условия использования</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
